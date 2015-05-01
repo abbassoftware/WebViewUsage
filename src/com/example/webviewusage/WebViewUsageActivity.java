@@ -2,6 +2,7 @@ package com.example.webviewusage;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,9 +19,11 @@ public class WebViewUsageActivity extends Activity {
 		
 		switch (v.getId()) {
 			case R.id.btnWebViewActivityWithURL:
+				startActivity(new Intent(this, WebVievActivityWithURL.class));
 				break;
 			case R.id.btnWebViewActivityWithHTML:
-				break;
+				startActivity(new Intent(this, WebViewActivityWithHTML.class));
+			break;
 		}
 	  
 	}
