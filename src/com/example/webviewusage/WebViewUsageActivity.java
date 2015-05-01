@@ -23,6 +23,5 @@ public class WebViewUsageActivity extends Activity {
             startActivity(new Intent(this, WebViewActivityWithHTML.class));
             break;
         }
-
     }
 }
