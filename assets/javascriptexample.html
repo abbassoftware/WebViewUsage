@@ -1,0 +1,18 @@
+<html>
+
+<body>
+<input type="button" value="Show Toast" onClick="showAndroidToast('Toast to JavaScript interface')" />
+<br>
+<input type="button" value="Close this Activity" onClick="closeActivity()" />
+</body>
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+    
+     function closeActivity() {
+        Android.closeActivity();
+    }
+</script>
+
+</html>

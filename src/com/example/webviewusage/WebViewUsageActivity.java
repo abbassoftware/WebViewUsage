@@ -17,11 +17,19 @@ public class WebViewUsageActivity extends Activity {
 
         switch (v.getId()) {
         case R.id.btnWebViewActivityWithURL:
-            startActivity(new Intent(this, WebVievActivityWithURL.class));
+            startActivity(new Intent(this, WebViewActivityWithURL.class));
             break;
         case R.id.btnWebViewActivityWithHTML:
             startActivity(new Intent(this, WebViewActivityWithHTML.class));
             break;
+        case R.id.btnWebViewActivityWithWebClient:
+            startActivity(new Intent(this, WebViewActivityWithWebClient.class));
+            break;
+        case R.id.btnWebViewActivityWithJavaScript:
+            startActivity(new Intent(this, WebViewActivityWithJavaScript.class));
+            break;
+            
+            
         }
     }
 }

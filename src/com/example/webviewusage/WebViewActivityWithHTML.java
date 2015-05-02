@@ -8,6 +8,9 @@ public class WebViewActivityWithHTML extends Activity {
 
     private WebView myWebView;
 
+    /* (non-Javadoc)
+     * @see android.app.Activity#onCreate(android.os.Bundle)
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +21,9 @@ public class WebViewActivityWithHTML extends Activity {
                 "text/html", "UTF-8", "");
     }
 
+    /**
+     * @return - Static HTML data
+     */
     private String getHTMLData() {
         StringBuilder html = new StringBuilder();
         html.append("<html>");

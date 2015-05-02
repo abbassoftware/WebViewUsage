@@ -1,25 +1,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   xmlns:tools="http://schemas.android.com/tools"
-   android:layout_width="match_parent"
-   android:layout_height="match_parent"
-   android:orientation="vertical"
-   tools:context=".LinearLayout" >
-   
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LinearLayout" >
 
-   <Button
-	android:id="@+id/btnWebViewActivityWithURL"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Start Webview with URL"
-	android:onClick="onBtnClicked">
-  </Button>
-  
     <Button
-	android:id="@+id/btnWebViewActivityWithHTML"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Start Webview with HTML content"
-	android:onClick="onBtnClicked">
-  </Button>
-                    
+        android:id="@+id/btnWebViewActivityWithURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClicked"
+        android:text="Start Webview with URL" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnWebViewActivityWithHTML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClicked"
+        android:text="Start Webview with HTML content" >
+    </Button>
+    
+    <Button
+        android:id="@+id/btnWebViewActivityWithWebClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClicked"
+        android:text="Start Webview with WebClient" >
+    </Button>
+    
+    <Button
+        android:id="@+id/btnWebViewActivityWithJavaScript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClicked"
+        android:text="Start Webview with JavaScript" >
+    </Button>
+    
+
 </LinearLayout>
